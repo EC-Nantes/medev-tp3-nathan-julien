@@ -14,9 +14,9 @@ public class Image {
     private String nom;
     private int largeur;
     private int hauteur;
-    private ArrayList<ArrayList<int>> data;
+    private List<List<Integer>> data;
     
-    public Image(String nom, int largeur, int hauteur, List data){
+    public Image(String nom, int largeur, int hauteur, List<List<Integer>> data){
         this.nom=nom;
         this.largeur=largeur;
         this.hauteur=hauteur;
