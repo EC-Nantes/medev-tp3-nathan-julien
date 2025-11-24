@@ -19,8 +19,8 @@ public class Seuillage {
      * @param D
      * @return
      */
-    public int seuillage(GestionFichier img,int D){
-        ArrayList<List<Integer>> hache=new ArrayList<List<Integer>>();
+    public ArrayList<ArrayList<Integer>> seuillage(GestionFichier img,int D){
+        ArrayList<ArrayList<Integer>> hache=new ArrayList<ArrayList<Integer>>();
         int longueur=img.hauteur;
         int largeur=img.largeur;
         ArrayList<ArrayList<Integer>> HD=img.data;
@@ -36,5 +36,6 @@ public class Seuillage {
             }
             hache.add(hacher);
         }
+        return hache;
     }
 }
