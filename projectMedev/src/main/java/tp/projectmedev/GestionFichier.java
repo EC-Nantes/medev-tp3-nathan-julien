@@ -23,7 +23,7 @@ public class GestionFichier {
     
     public GestionFichier(String nom){
         this.source=nom;
-        ArrayList<List> data = new ArrayList<List>();
+        List<List<Integer>> data = new ArrayList<>();
         BufferedReader fichier;
         String ligne;
         ArrayList<Integer> liste =new ArrayList<>();
