@@ -2,10 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package natlien.analimag;
+package tp.projectmedev;
 
 import java.util.List;
 import java.util.ArrayList;
+import tp.projectmedev.GestionFichier;
 
 /**
  *
@@ -19,13 +20,13 @@ public class Seuillage {
      * @param D
      * @return
      */
-    public ArrayList<ArrayList<Integer>> seuillage(GestionFichier img,int D){
-        ArrayList<ArrayList<Integer>> hache=new ArrayList<ArrayList<Integer>>();
-        int longueur=img.hauteur;
-        int largeur=img.largeur;
-        ArrayList<ArrayList<Integer>> HD=img.data;
-        for(ArrayList<Integer> Ligne : HD){
-            ArrayList<Integer> hacher=new ArrayList<Integer>();
+    public List<List<Integer>> seuillage(Image img,int D){
+        List<List<Integer>> hache=new List<List<Integer>>();
+        int longueur=img.getHauteur();
+        int largeur=img.getLargeur();
+        List<List<Integer>> HD=img.getData();
+        for(List<Integer> Ligne : HD){
+            List<Integer> hacher=new ArrayList<Integer>();
             for(int pixel : Ligne){
                 if(pixel>D){
                     hacher.add(1);
